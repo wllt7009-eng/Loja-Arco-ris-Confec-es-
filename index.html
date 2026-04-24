@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Arco Íris | Confecções - Moda Elegante para Toda a Família</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGAÇÃO FIXA -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-rainbow"></i>
+                <span>Loja Arco Íris</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#masculino" class="nav-link">Masculino</a></li>
+                <li><a href="#feminino" class="nav-link">Feminino</a></li>
+                <li><a href="#infantil" class="nav-link">Infantil</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Loja Arco Íris</h1>
+            <p class="hero-subtitle">Confecções</p>
+            <p class="hero-tagline">"O estilo que combina com você"</p>
+            <button class="btn-primary" onclick="scrollToSection('feminino')">Ver Coleção</button>
+        </div>
+        <div class="hero-background">
+            <div class="geometric-shape"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE DESTAQUE -->
+    <section class="highlight">
+        <h2>"Moda para toda a família, com elegância e estilo"</h2>
+        <p>Confecções premium em tecidos selecionados com cuidado e atenção aos detalhes. Encontre seu estilo único em nossas coleções exclusivas.</p>
+    </section>
+
+    <!-- SEÇÃO MASCULINO -->
+    <section class="products-section" id="masculino">
+        <div class="section-header">
+            <h2>Coleção Masculina</h2>
+            <p>Elegância e sofisticação para o homem moderno</p>
+        </div>
+        <div class="products-grid" id="masculino-products">
+            <!-- Produtos serão carregados via JavaScript -->
+        </div>
+    </section>
+
+    <!-- SEÇÃO FEMININO -->
+    <section class="products-section" id="feminino">
+        <div class="section-header">
+            <h2>Coleção Feminina</h2>
+            <p>Sofisticação e estilo em cada peça</p>
+        </div>
+        <div class="products-grid" id="feminino-products">
+            <!-- Produtos serão carregados via JavaScript -->
+        </div>
+    </section>
+
+    <!-- SEÇÃO INFANTIL -->
+    <section class="products-section" id="infantil">
+        <div class="section-header">
+            <h2>Coleção Infantil</h2>
+            <p>Moda confortável e divertida para as crianças</p>
+        </div>
+        <div class="products-grid" id="infantil-products">
+            <!-- Produtos serão carregados via JavaScript -->
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section class="contact-section" id="contato">
+        <h2>Atendimento Rápido e Personalizado</h2>
+        <p>Tire suas dúvidas e faça seu pedido pelo WhatsApp</p>
+        <button class="btn-secondary" onclick="openWhatsApp('geral')">
+            <i class="fab fa-whatsapp"></i> Fale Conosco
+        </button>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Loja Arco Íris</h3>
+                <p>Confecções Premium</p>
+            </div>
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5538999999999" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Loja Arco Íris | Confecções. Atendimento rápido e personalizado.</p>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5538999999999" target="_blank" class="whatsapp-button" title="Chamar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
