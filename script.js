@@ -5,13 +5,13 @@ const products = {
             id: 1, 
             name: 'Conjunto Casual Premium - Bege', 
             category: 'masculino', 
-            image: 'https://via.placeholder.com/300x350/e8e4d0/1a1a1a?text=Homem+Casual' 
+            image: 'arcoiris_loja__20260424_011948_969.jpg' 
         },
         { 
             id: 2, 
             name: 'Camisa Social Branca Premium', 
             category: 'masculino', 
-            image: 'https://via.placeholder.com/300x350/f5f5f5/1a1a1a?text=Camisa+Social' 
+            image: '' 
         },
         { 
             id: 3, 
@@ -43,7 +43,7 @@ const products = {
             id: 7, 
             name: 'Vestido Festa Vermelho Elegante', 
             category: 'feminino', 
-            image: 'https://images.unsplash.com/photo-1595777707802-8b1353ce2817?w=400&h=500&fit=crop' 
+            image: 'arcoiris_loja__20260424_012011_708.jpg' 
         },
         { 
             id: 8, 
@@ -55,7 +55,7 @@ const products = {
             id: 9, 
             name: 'Top Marrom Sofisticado', 
             category: 'feminino', 
-            image: 'https://images.unsplash.com/photo-1571513454118-d66222b0ced3?w=400&h=500&fit=crop' 
+            image: 'arcoiris_loja__20260424_011924_786.jpg' 
         },
         { 
             id: 10, 
@@ -111,7 +111,7 @@ const products = {
             id: 18, 
             name: 'Blusa Menina Elegante', 
             category: 'infantil', 
-            image: 'https://via.placeholder.com/300x350/dda0dd/ffffff?text=Blusa+Menina' 
+            image: 'arcoiris_loja__20260424_012002_854.jpg' 
         }
     ]
 };
