@@ -1,3 +1,6 @@
+/* ==================== IMPORT GOOGLE FONTS ====================  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
 /* ==================== VARIÁVEIS E RESET ==================== */
 :root {
     --color-primary: #1a1a1a;
@@ -13,8 +16,9 @@
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
     --transition: all 0.3s ease-in-out;
-    --font-main: 'Segoe UI', Trebuchet MS, sans-serif;
-    --font-accent: 'Georgia', serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-display: 'Poppins', sans-serif;
+    --font-body: 'Lato', 'Montserrat', sans-serif;
 }
 
 * {
@@ -25,14 +29,92 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
-    font-family: var(--font-main);
+    font-family: var(--font-body);
     color: var(--color-text);
     background-color: var(--color-white);
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.3px;
+}
+
+/* ==================== TIPOGRAFIA BASE ====================  */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.75;
+    letter-spacing: 0.4px;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+    font-weight: 400;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+span {
+    font-weight: inherit;
+    letter-spacing: inherit;
 }
 
 /* ==================== NAVBAR ==================== */
@@ -44,25 +126,28 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     z-index: 1000;
     transition: var(--transition);
+    padding: 0.8rem 0;
 }
 
 .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: 0.5rem var(--spacing-md);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: var(--color-primary);
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
     text-decoration: none;
+    font-family: var(--font-serif);
+    letter-spacing: 0.5px;
 }
 
 .navbar-logo i {
@@ -83,6 +168,10 @@ body {
     font-size: 0.95rem;
     transition: var(--transition);
     position: relative;
+    font-family: var(--font-display);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 .nav-link:hover {
@@ -139,19 +228,25 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 4.5rem;
+    font-weight: 800;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    letter-spacing: -2px;
-    font-family: var(--font-accent);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    font-family: var(--font-serif);
+    text-transform: none;
+    word-spacing: 0.1em;
 }
 
 .hero-subtitle {
     font-size: 2.5rem;
     color: var(--color-accent);
     margin-bottom: var(--spacing-md);
-    font-weight: 300;
+    font-weight: 500;
+    font-family: var(--font-serif);
+    letter-spacing: 1px;
+    font-style: normal;
 }
 
 .hero-tagline {
@@ -159,12 +254,16 @@ body {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-lg);
     font-style: italic;
+    font-family: var(--font-body);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
 }
 
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-white);
-    padding: 1rem 3rem;
+    padding: 1.1rem 3.5rem;
     border: 2px solid var(--color-primary);
     border-radius: 0;
     font-size: 1rem;
@@ -172,7 +271,9 @@ body {
     cursor: pointer;
     transition: var(--transition);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-family: var(--font-display);
+    font-weight: 700;
 }
 
 .btn-primary:hover {
@@ -210,19 +311,24 @@ body {
 }
 
 .highlight h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: var(--spacing-md);
-    font-family: var(--font-accent);
-    font-weight: 400;
+    font-family: var(--font-serif);
+    font-weight: 600;
     color: var(--color-accent);
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 
 .highlight p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #cccccc;
-    line-height: 1.8;
+    color: #d4d4d4;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-family: var(--font-body);
 }
 
 /* ==================== PRODUCTS SECTION ==================== */
@@ -239,16 +345,21 @@ body {
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
-    font-family: var(--font-accent);
+    margin-bottom: 0.8rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 .section-header p {
     font-size: 1.1rem;
     color: var(--color-text-light);
     font-weight: 300;
+    letter-spacing: 0.5px;
+    font-family: var(--font-body);
 }
 
 .products-grid {
@@ -316,25 +427,29 @@ body {
 }
 
 .product-name {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--color-primary);
     margin-bottom: var(--spacing-sm);
     font-weight: 600;
+    font-family: var(--font-serif);
+    letter-spacing: 0.3px;
+    line-height: 1.4;
 }
 
 .btn-secondary {
     background: var(--color-accent);
     color: var(--color-white);
-    padding: 0.8rem 2rem;
+    padding: 0.9rem 2rem;
     border: none;
     border-radius: 0;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: var(--transition);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     width: 100%;
+    font-family: var(--font-display);
 }
 
 .btn-secondary:hover {
@@ -353,15 +468,20 @@ body {
 }
 
 .contact-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: var(--spacing-sm);
-    font-family: var(--font-accent);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-accent);
 }
 
 .contact-section p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: var(--spacing-lg);
-    color: #cccccc;
+    color: #d4d4d4;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
 }
 
 .contact-section .btn-secondary {
@@ -416,12 +536,17 @@ body {
 .footer-section h3 {
     margin-bottom: var(--spacing-sm);
     color: var(--color-accent);
-    font-family: var(--font-accent);
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .footer-section p {
     color: #aaaaaa;
     font-size: 0.95rem;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
 }
 
 .social-links {
@@ -447,6 +572,8 @@ body {
     text-align: center;
     color: #888888;
     font-size: 0.9rem;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
 }
 
 /* ==================== ANIMAÇÕES ==================== */
@@ -488,8 +615,16 @@ body {
 
 /* ==================== RESPONSIVIDADE ==================== */
 @media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
     .navbar-container {
-        padding: var(--spacing-sm);
+        padding: 0.5rem var(--spacing-sm);
+    }
+
+    .navbar-logo {
+        font-size: 1.1rem;
     }
 
     .nav-menu {
@@ -521,32 +656,44 @@ body {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
     }
 
     .hero-subtitle {
         font-size: 1.8rem;
+        letter-spacing: 0.8px;
     }
 
     .hero-tagline {
         font-size: 1.1rem;
+        letter-spacing: 0.4px;
     }
 
     .btn-primary {
-        padding: 0.8rem 2rem;
+        padding: 0.9rem 2rem;
         font-size: 0.9rem;
+        letter-spacing: 1px;
     }
 
     .highlight h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        letter-spacing: 0.8px;
     }
 
     .highlight p {
         font-size: 1rem;
+        letter-spacing: 0.4px;
     }
 
     .section-header h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        letter-spacing: 0.8px;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+        letter-spacing: 0.4px;
     }
 
     .products-grid {
@@ -558,8 +705,19 @@ body {
         height: 250px;
     }
 
+    .product-name {
+        font-size: 1.1rem;
+        letter-spacing: 0.2px;
+    }
+
     .contact-section h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        letter-spacing: 0.8px;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+        letter-spacing: 0.4px;
     }
 
     .whatsapp-button {
@@ -578,9 +736,17 @@ body {
     .social-links {
         justify-content: center;
     }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
     :root {
         --spacing-md: 1.5rem;
         --spacing-lg: 2rem;
@@ -588,7 +754,12 @@ body {
     }
 
     .navbar-logo {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        letter-spacing: 0.4px;
     }
 
     .hero {
@@ -597,14 +768,28 @@ body {
 
     .hero-title {
         font-size: 2rem;
+        letter-spacing: 0.8px;
     }
 
     .hero-subtitle {
         font-size: 1.4rem;
+        letter-spacing: 0.6px;
     }
 
     .hero-tagline {
         font-size: 0.95rem;
+        letter-spacing: 0.3px;
+    }
+
+    .btn-primary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        letter-spacing: 0.6px;
     }
 
     .products-grid {
@@ -614,4 +799,15 @@ body {
     .product-image {
         height: 280px;
     }
-             }
+
+    .btn-secondary {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
+    }
+}
