@@ -1,28 +1,118 @@
 // ==================== CONFIGURAÇÃO DE PRODUTOS ====================
 const products = {
     masculino: [
-        { id: 1, name: 'Camisa Premium Linho', category: 'masculino', image: 'https://via.placeholder.com/300x350/e8e4d0/d4a574?text=Camisa+Linho' },
-        { id: 2, name: 'Calça Slim Elegante', category: 'masculino', image: 'https://via.placeholder.com/300x350/d9d4c3/d4a574?text=Calça+Slim' },
-        { id: 3, name: 'Blazer Executivo', category: 'masculino', image: 'https://via.placeholder.com/300x350/e0dcc8/d4a574?text=Blazer' },
-        { id: 4, name: 'Polo Sofisticada', category: 'masculino', image: 'https://via.placeholder.com/300x350/ede8da/d4a574?text=Polo' },
-        { id: 5, name: 'Shorts Premium', category: 'masculino', image: 'https://via.placeholder.com/300x350/e8e4d0/d4a574?text=Shorts' },
-        { id: 6, name: 'Camisa Social Branca', category: 'masculino', image: 'https://via.placeholder.com/300x350/f5f3ef/d4a574?text=Social' }
+        { 
+            id: 1, 
+            name: 'Conjunto Casual Premium', 
+            category: 'masculino', 
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/2wBDAQICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==' 
+        },
+        { 
+            id: 2, 
+            name: 'Camisa Social Branca', 
+            category: 'masculino', 
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/2wBDAQICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==' 
+        },
+        { 
+            id: 3, 
+            name: 'Blazer Executivo', 
+            category: 'masculino', 
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/2wBDAQICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==' 
+        },
+        { 
+            id: 4, 
+            name: 'Polo Sofisticada', 
+            category: 'masculino', 
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/2wBDAQICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==' 
+        },
+        { 
+            id: 5, 
+            name: 'Shorts Premium', 
+            category: 'masculino', 
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/2wBDAQICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==' 
+        },
+        { 
+            id: 6, 
+            name: 'Camisa Linho Premium', 
+            category: 'masculino', 
+            image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/2wBDAQICAgICAwUDAwwDAwsLBAwMCwsLDA0ODAwNDwwOEg0LDw4SFAwSFBMUFBwWFhYTGhgXGhYaHSj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlbaWmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==' 
+        }
     ],
     feminino: [
-        { id: 7, name: 'Vestido Festa Vermelho', category: 'feminino', image: 'https://via.placeholder.com/300x350/c41e3a/d4a574?text=Vestido' },
-        { id: 8, name: 'Blazer Branco Elegante', category: 'feminino', image: 'https://via.placeholder.com/300x350/f5f5f5/d4a574?text=Blazer' },
-        { id: 9, name: 'Calça Social Premium', category: 'feminino', image: 'https://via.placeholder.com/300x350/2d2d2d/d4a574?text=Calça' },
-        { id: 10, name: 'Top Sofisticado', category: 'feminino', image: 'https://via.placeholder.com/300x350/c69c8a/d4a574?text=Top' },
-        { id: 11, name: 'Saia Midi Elegante', category: 'feminino', image: 'https://via.placeholder.com/300x350/3d5c4d/d4a574?text=Saia' },
-        { id: 12, name: 'Macaquinho Premium', category: 'feminino', image: 'https://via.placeholder.com/300x350/8b7f75/d4a574?text=Macaquinho' }
+        { 
+            id: 7, 
+            name: 'Vestido Festa Vermelho', 
+            category: 'feminino', 
+            image: 'https://via.placeholder.com/300x350/c41e3a/ffffff?text=Vestido+Vermelho' 
+        },
+        { 
+            id: 8, 
+            name: 'Blazer Branco Elegante', 
+            category: 'feminino', 
+            image: 'https://via.placeholder.com/300x350/f5f5f5/d4a574?text=Blazer+Branco' 
+        },
+        { 
+            id: 9, 
+            name: 'Calça Social Premium', 
+            category: 'feminino', 
+            image: 'https://via.placeholder.com/300x350/2d2d2d/d4a574?text=Calça+Social' 
+        },
+        { 
+            id: 10, 
+            name: 'Top Sofisticado', 
+            category: 'feminino', 
+            image: 'https://via.placeholder.com/300x350/c69c8a/ffffff?text=Top' 
+        },
+        { 
+            id: 11, 
+            name: 'Saia Midi Elegante', 
+            category: 'feminino', 
+            image: 'https://via.placeholder.com/300x350/3d5c4d/ffffff?text=Saia+Midi' 
+        },
+        { 
+            id: 12, 
+            name: 'Macaquinho Premium', 
+            category: 'feminino', 
+            image: 'https://via.placeholder.com/300x350/8b7f75/ffffff?text=Macaquinho' 
+        }
     ],
     infantil: [
-        { id: 13, name: 'Camisa Infantil Estampa', category: 'infantil', image: 'https://via.placeholder.com/300x350/87ceeb/d4a574?text=Camisa' },
-        { id: 14, name: 'Calça Confortável', category: 'infantil', image: 'https://via.placeholder.com/300x350/f0f8ff/d4a574?text=Calça' },
-        { id: 15, name: 'Vestido Infantil Rosa', category: 'infantil', image: 'https://via.placeholder.com/300x350/ffb6c1/d4a574?text=Vestido' },
-        { id: 16, name: 'Conjunto Menino', category: 'infantil', image: 'https://via.placeholder.com/300x350/a9a9a9/d4a574?text=Conjunto' },
-        { id: 17, name: 'Shorts Colorido', category: 'infantil', image: 'https://via.placeholder.com/300x350/ffa500/d4a574?text=Shorts' },
-        { id: 18, name: 'Blusa Menina', category: 'infantil', image: 'https://via.placeholder.com/300x350/dda0dd/d4a574?text=Blusa' }
+        { 
+            id: 13, 
+            name: 'Camisa Infantil Estampa', 
+            category: 'infantil', 
+            image: 'https://via.placeholder.com/300x350/87ceeb/ffffff?text=Camisa+Infantil' 
+        },
+        { 
+            id: 14, 
+            name: 'Calça Confortável', 
+            category: 'infantil', 
+            image: 'https://via.placeholder.com/300x350/f0f8ff/d4a574?text=Calça+Infantil' 
+        },
+        { 
+            id: 15, 
+            name: 'Vestido Infantil Rosa', 
+            category: 'infantil', 
+            image: 'https://via.placeholder.com/300x350/ffb6c1/ffffff?text=Vestido+Rosa' 
+        },
+        { 
+            id: 16, 
+            name: 'Conjunto Menino', 
+            category: 'infantil', 
+            image: 'https://via.placeholder.com/300x350/a9a9a9/ffffff?text=Conjunto' 
+        },
+        { 
+            id: 17, 
+            name: 'Shorts Colorido', 
+            category: 'infantil', 
+            image: 'https://via.placeholder.com/300x350/ffa500/ffffff?text=Shorts' 
+        },
+        { 
+            id: 18, 
+            name: 'Blusa Menina', 
+            category: 'infantil', 
+            image: 'https://via.placeholder.com/300x350/dda0dd/ffffff?text=Blusa+Menina' 
+        }
     ]
 };
 
